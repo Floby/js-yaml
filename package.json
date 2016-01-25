@@ -1,6 +1,6 @@
 {
   "name": "yaml-parser",
-  "version": "3.5.2",
+  "version": "3.5.3",
   "description": "YAML 1.2 parser and serializer",
   "keywords": [
     "yaml",
