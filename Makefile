@@ -78,22 +78,6 @@ publish:
 	git tag ${NPM_VERSION} && git push origin ${NPM_VERSION}
 	npm publish ${GITHUB_PROJ}/tarball/${NPM_VERSION}
 
-
-browserify:
-	if test ! `which browserify` ; then npm install browserify ; fi
-	if test ! `which uglifyjs` ; then npm install uglify-js ; fi
-	rm -rf ./dist
-	mkdir dist
-	# Browserify
-	( echo -n "/* ${NPM_PACKAGE} ${NPM_VERSION} ${GITHUB_PROJ} */" ; \
-		./node_modules/.bin/browserify -r ./ -s jsyaml \
-		) > dist/js-yaml.js
-	# Minify
-	./node_modules/.bin/uglifyjs dist/js-yaml.js -c -m \
-		--preamble "/* ${NPM_PACKAGE} ${NPM_VERSION} ${GITHUB_PROJ} */" \
-		> dist/js-yaml.min.js
-
-
 todo:
 	grep 'TODO' -n -r ./lib 2>/dev/null || test true
 

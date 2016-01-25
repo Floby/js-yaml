@@ -20,8 +20,7 @@
   "repository": "floby/yaml-parser",
   "files": [
     "index.js",
-    "lib/",
-    "dist/"
+    "lib/"
   ],
   "dependencies": {
     "esprima": "^2.6.0"
@@ -29,16 +28,11 @@
   "devDependencies": {
     "ansi": "*",
     "benchmark": "*",
-    "browserify": "^13.0.0",
     "codemirror": "^5.10.0",
     "eslint": "0.24.1",
     "eslint-plugin-nodeca": "^1.0.3",
     "istanbul": "*",
-    "mocha": "*",
-    "uglify-js": "^2.6.1"
-  },
-  "browser": {
-    "buffer": false
+    "mocha": "*"
   },
   "scripts": {
     "test": "make test"
