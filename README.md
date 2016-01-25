@@ -1,4 +1,4 @@
-JS-YAML - YAML 1.2 parser / writer for JavaScript
+YAML-PARSER - YAML 1.2 parser / writer for JavaScript
 =================================================
 
 [![Build Status](https://travis-ci.org/nodeca/js-yaml.svg?branch=master)](https://travis-ci.org/nodeca/js-yaml)
@@ -6,6 +6,9 @@ JS-YAML - YAML 1.2 parser / writer for JavaScript
 
 __[Online Demo](http://nodeca.github.com/js-yaml/)__
 
+
+**yaml-parser** is a fork of **js-yaml** whose goal is to remove command-line
+functionalities in order to provide a leaner module.
 
 This is an implementation of [YAML](http://yaml.org/), a human friendly data
 serialization language. Started as [PyYAML](http://pyyaml.org/) port, it was
@@ -18,31 +21,7 @@ Installation
 ### YAML module for node.js
 
 ```
-npm install js-yaml
-```
-
-
-### CLI executable
-
-If you want to inspect your YAML files from CLI, install js-yaml globally:
-
-```
-npm install -g js-yaml
-```
-
-#### Usage
-
-```
-usage: js-yaml [-h] [-v] [-c] [-t] file
-
-Positional arguments:
-  file           File with YAML document(s)
-
-Optional arguments:
-  -h, --help     Show this help message and exit.
-  -v, --version  Show program's version number and exit.
-  -c, --compact  Display errors in compact mode
-  -t, --trace    Show stack trace on error
+npm install --save js-yaml
 ```
 
 
